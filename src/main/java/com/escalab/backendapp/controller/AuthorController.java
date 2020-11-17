@@ -42,7 +42,6 @@ public class AuthorController {
 		return new ResponseEntity<Author>(authorSaved,  HttpStatus.OK);
 	}
 	
-	
 	@PutMapping
 	public ResponseEntity<Author> updateBook(@Validated @RequestBody Author author){
 		Author authorUpdated = authorService.update(author);
